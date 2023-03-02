@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    width: 100%;
+    font-size: 100%;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+img{
+    max-width: 100%;
+}
+p{
+    margin: 0;
+    padding: 0;
+    overflow-wrap: normal;
+}
+
+/*home-content*/
+.home-content{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0 3.1rem 0;
+    text-align: center;
+}
+.home-content .text{
+    width: 60%;
+    height: 100%;
+    padding: 5rem;
+    text-align: left;
+}
+.home-content h1{
+    font-size: 2.2rem;
+}
+.home-content .what{
+    margin: 2.5rem;
+    font-size: 1.7rem;
+    line-height: 1.3;
+    overflow-wrap: normal;
+    text-align: left;
+}
+.home-content .name{
+    font-size: 1.7rem;
+    text-align: right;
+}
+.home-content .picture{
+    width: 40%;
+    padding: 2rem;    
+}
+.home-content .picture img{
+    width: 100%;
+    height: 90%;
+}
+
+
+/*sub-content*/
+.sub-content{
+    background-color: rgb(244, 243, 243);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5rem;
+}
+.sub-content h2{
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top:1.9rem;
+    margin: 1.9rem;
+}
+.sub-content .container{
+    display: flex;
+    margin: 2rem;
+}
+.sub-content img{
+    width: 70%;
+    height: 70%;
+}
+.sub-content .one{
+    font-size:1.3rem;
+    margin: 3rem;
+    text-align: center;
+    flex: 1;
+}
+.text{
+    margin: 1rem;
+    text-align: left;
+}
+.text p{
+    overflow-wrap: normal;
+}
+
+/*レスポンシブ*/
+
+/*タブレット用*/
+@media screen and (max-width: 980px ) {
+
+    /*home-content*/
+    .home-content{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .home-content .text{
+        padding: 2rem;
+    }
+    .home-content .what{
+        font-size: 1.1rem;
+        margin: 1rem;
+    }
+    .home-content .name{
+        font-size: 1.1rem;
+    }
+    .home-content h1{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    .home-content .picture{
+        width: 50%;
+    }
+    .home-content .picture img{
+        width: 100%;
+        height: 70%;
+    }
+
+    /* sub-content */
+    .sub-content h2{
+        font-size: 1.5rem;
+    }
+    .sub-content img{
+        width: 100%;
+        height: 60%;
+    }
+    .sub-content .one{
+        font-size:1.1rem;
+        margin: 1.5rem;
+    }
+}
+
+/*スマホ用*/
+@media screen and (max-width:480px){
+
+    /*home-content*/
+    .home-content{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .home-content .picture{
+        display: none;
+    }
+    .home-content h1{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
+        font-weight: bold;
+    }
+    .home-content .text{
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
+    }
+    .home-content .what{
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .home-content .name{
+        font-size: 1.1rem;
+    }
+
+    /* sub-content */
+    
+    .sub-content .container{
+        display: block;
+        margin: 0;
+        padding: 1rem;
+    }
+    .sub-content h2{
+        font-size: 1.5rem;
+    }
+    .sub-content .text{
+        width: 100%;
+    }
+    .sub-content img{
+        width:100%;
+        height: 100%;
+    }
+}
